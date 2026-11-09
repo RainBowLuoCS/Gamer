@@ -105,7 +105,7 @@ Gamer improves across CPT, SFT, and online RL on held-out tasks in **Honkai: Sta
 |---|---:|---:|---:|
 | Opportunity Makes the Thief (Part I) | 34.4% | 72.2% | **80.0%** |
 | Bestial Ferocity | 47.9% | 69.1% | **83.6%** |
-| Seven minigame types (macro-average) | 15.0% | 39.2% | **49.7%** |
+| Minigame Benchmarks (macro-average) | 15.0% | 39.2% | **49.7%** |
 
 TA-GRPO improves the two side-quest scores by **7.8** and **14.5 percentage points** over SFT, and the minigame macro-average by **10.5 percentage points**.
 
