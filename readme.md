@@ -63,7 +63,7 @@ We introduce Gamer, a generalist agent framework built for long-horizon tasks in
 - [x] **Paper release**
 - [x] **System prompt and action format documentation**
 - [x] **Gameplay demos and project page**
-- [ ] **Streaming-vLLM release** — timing TBD
+- [ ] **Streaming-vLLM**
 
 ## Video Demos
 
