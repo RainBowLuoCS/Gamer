@@ -196,7 +196,7 @@ Each decision represents approximately **200 ms** of interaction: **six steps of
 
 Convert mouse displacement to pixels with `dx = X / 1000 × screen_width` and `dy = Y / 1000 × screen_height`. A key appearing in consecutive groups stays held across those steps.
 
-### Sparse Thinking
+### Sparse Reasoning
 
 The agent can act directly when its previous strategy still applies, or reason when the situation changes or a new objective requires it.
 
