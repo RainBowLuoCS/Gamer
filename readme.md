@@ -11,7 +11,7 @@ Run&nbsp;Luo · Kuan&nbsp;Zhang · Qi&nbsp;Deng · Yukun&nbsp;Chen · Zhihao&nbs
 </p>
 
 <p align="center">
-  <img src="assets/logos/mihoyo.svg" alt="miHoYo" width="100" align="middle"> &nbsp; <b>miHoYo Honkai AI R&amp;D Team</b>
+  <img src="assets/logos/mihoyo.svg" alt="miHoYo" width="100" align="middle"> &nbsp; <b> Honkai AI R&amp;D Team</b>
 </p>
 
 <!-- Fill in the empty href values with the corresponding release URLs. -->
