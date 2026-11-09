@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Video demo placeholder</title>
+  <desc id="desc">A placeholder for a gameplay video. The video link will be added later.</desc>
+  <rect width="640" height="360" rx="12" fill="#f6f8fa"/>
+  <rect x="16" y="16" width="608" height="328" rx="8" fill="none" stroke="#d1d9e0" stroke-width="2" stroke-dasharray="8 8"/>
+  <circle cx="320" cy="150" r="44" fill="#ddf4ff"/>
+  <path d="M309 129 L309 171 L342 150 Z" fill="#0969da"/>
+  <text x="320" y="235" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="600" fill="#59636e">Video link to be added</text>
+</svg>
