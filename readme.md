@@ -4,7 +4,7 @@
   <img src="assets/logos/universities.svg" alt="National University of Singapore · Tsinghua University · University of Chinese Academy of Sciences · University of Science and Technology of China" width="100%">
 </p>
 
-<h2 align="center">Gamer: A Generalist Vision-Language-Action Foundation <br> Model for Long-Horizon Real-Time Game Agent</h2>
+<h2 align="center">Gamer: A Generalist Vision-Language-Action <br> Foundation Model for Long-Horizon Real-Time Game Agent</h2>
 
 <p>
 Run&nbsp;Luo · Kuan&nbsp;Zhang · Qi&nbsp;Deng · Yukun&nbsp;Chen · Zhihao&nbsp;Yang · Yufei&nbsp;Zhang · Renrong&nbsp;Hu ·  Yi&nbsp;Zhang  <br> Yinhe&nbsp;Zheng · Xiaobo&nbsp;Xia · Dawei&nbsp;Jiang · Shaoqing&nbsp;Ren
