@@ -90,7 +90,7 @@ Gamer combines three training stages through a shared screen-observation and key
 | Stage | Supervision | What the policy learns |
 |---|---|---|
 | **Continued Pre-Training** | Aligned screen observations and device-level actions from diverse games, mixed with general multimodal data | Transferable visual control through a unified action representation |
-| **Sparse-reasoning SFT** | Instructions at operation, subgoal, and task levels, with reasoning and memory annotations | Task-conditioned actions, reasoning at critical decisions, and summaries that preserve progress across context boundaries |
+| **Sparse-Reasoning SFT** | Instructions at operation, subgoal, and task levels, with reasoning and memory annotations | Task-conditioned actions, reasoning at critical decisions, and summaries that preserve progress across context boundaries |
 | **Temporal-Aware GRPO** | Online rollouts with environment-verifiable rewards | Improved long-horizon execution through memory-linked segments and temporal credit assignment |
 
 During interaction, the policy combines the game controls, task instruction, recent observations and actions, and persistent memory. It generates an action directly at routine steps, or produces reasoning or a memory update before acting. Summaries carry completed objectives, failed attempts, and remaining plans into later context windows.
