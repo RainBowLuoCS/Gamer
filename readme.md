@@ -89,7 +89,7 @@ Gamer combines three training stages through a shared screen-observation and key
 
 | Stage | Supervision | What the policy learns |
 |---|---|---|
-| **Continued Pre-Training (CPT)** | Aligned screen observations and device-level actions from diverse games, mixed with general multimodal data | Transferable visual control through a unified action representation |
+| **Continued Pre-Training** | Aligned screen observations and device-level actions from diverse games, mixed with general multimodal data | Transferable visual control through a unified action representation |
 | **Sparse-thinking SFT** | Instructions at operation, subgoal, and task levels, with reasoning and memory annotations | Task-conditioned actions, reasoning at critical decisions, and summaries that preserve progress across context boundaries |
 | **TA-GRPO** | Online rollouts with environment-verifiable rewards | Improved long-horizon execution through memory-linked segments and temporal credit assignment |
 
@@ -127,7 +127,7 @@ On the **NVIDIA H200 / Qwen3.5-35B-A3B MoE** workload, cumulative runtime optimi
 | Configuration | Tensor parallelism | Request latency ↓ |
 |---|---:|---:|
 | Baseline | TP1 | 1306.00 ms |
-| Full cumulative optimization, including guided decoding | TP4 | **65.12 ms** |
+| Full cumulative optimization (Ours) | TP4 | **65.12 ms** |
 
 ## System Prompt
 
