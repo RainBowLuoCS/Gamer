@@ -16,7 +16,7 @@ Run&nbsp;Luo · Kuan&nbsp;Zhang · Qi&nbsp;Deng · Yukun&nbsp;Chen · Zhihao&nbs
 
 <!-- Fill in the empty href values with the corresponding release URLs. -->
 <p align="center">
-  <a href=""><img src="assets/badges/models.svg" alt="Models"></a>
+  <!-- <a href=""><img src="assets/badges/models.svg" alt="Models"></a> -->
   <a href=""><img src="assets/badges/daily-paper.svg" alt="Daily Paper"></a>
   <a href=""><img src="assets/badges/project-page.svg" alt="Project Page"></a>
   <a href=""><img src="assets/badges/arxiv.svg" alt="arXiv"></a>
