@@ -4,7 +4,7 @@
   <img src="assets/logos/universities.svg" alt="National University of Singapore · Tsinghua University · University of Chinese Academy of Sciences · University of Science and Technology of China" width="100%">
 </p>
 
-<h2 align="center">Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent</h2>
+<h2 align="center">Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon, Real-Time Game Agents</h2>
 
 <p>
 Run&nbsp;Luo · Kuan&nbsp;Zhang · Qi&nbsp;Deng · Yukun&nbsp;Chen · Zhihao&nbsp;Yang · Yufei&nbsp;Zhang · Renrong&nbsp;Hu ·  Yi&nbsp;Zhang  <br> Yinhe&nbsp;Zheng · Xiaobo&nbsp;Xia · Dawei&nbsp;Jiang · Shaoqing&nbsp;Ren
@@ -49,13 +49,13 @@ Thank you for your support!
 
 ## Abstract
 
-We introduce Gamer, a generalist agent framework built for long-horizon tasks in complex interactive environments. Its end-to-end architecture combines perception, memory management, and multi-step reasoning. A shared training and deployment pipeline supports interaction with both conventional 2D graphical interfaces and complex 3D simulated worlds. We first continue pre-training on a dataset constructed from tens of thousands of hours of device-level keyboard and mouse interaction. These trajectories span simulated games and embodied environments, allowing the model to learn environmental dynamics across both physical and virtual domains. Sparse thinking instruction tuning then substantially reduces redundant computation while preserving the reasoning needed for complex decisions. We train the policy for long-horizon interaction with a stable multi-turn reinforcement learning method that addresses finite context windows, accumulated rollout errors, and sparse rewards. For real-time interaction, a cloud–edge inference engine serves numerous simulated game environments concurrently, supports unbounded-context execution, and keeps online inference latency low. Across multiple challenging 3D open-world games, Gamer demonstrates solid generalization and operational efficiency comparable to skilled players. It also achieves competitive results on a range of conventional 2D game benchmarks. These results suggest that even repetitive keyboard and mouse trajectories can support substantial gains from scaling data and learning algorithms. Training on these trajectories helps Gamer learn complex skills more steadily in environments with both physical and digital properties. This approach offers a path toward generalist agents that can interact across digital and physical worlds.
+We introduce Gamer, a generalist agent framework built for long-horizon tasks in complex interactive environments. Its end-to-end architecture combines perception, memory management, and multi-step reasoning. A shared training and deployment pipeline supports interaction with both conventional 2D graphical interfaces and complex 3D simulated worlds. We first continue pre-training on a dataset of tens of thousands of hours of device-level keyboard and mouse interaction. These trajectories span simulated games and embodied environments, allowing the model to learn environmental dynamics across both physical and virtual domains. Sparse-thinking instruction tuning then substantially reduces redundant computation while preserving the reasoning needed for complex decisions. We train the policy for long-horizon interaction with a stable multi-turn reinforcement learning method that addresses finite context windows, error accumulation during rollouts, and sparse rewards. For real-time interaction, a cloud–edge inference engine serves numerous simulated game environments concurrently, supports unbounded-context execution, and keeps online inference latency low. Across multiple challenging 3D open-world games, Gamer generalizes well and achieves operational efficiency comparable to that of skilled players. It also achieves competitive results on a range of conventional 2D game benchmarks. These results suggest that even repetitive keyboard and mouse trajectories can support substantial gains from scaling data and learning algorithms. Training on these trajectories helps Gamer learn complex skills more steadily in environments with both physical and digital properties. This approach offers a path toward generalist agents that can interact across digital and physical worlds.
 
 ## Highlights
 
-- **Unified Visual Control.** Gamer observes screen pixels and executes native keyboard and mouse actions through a shared interface across games.
-- **Sparse Reasoning & Persistent Memory.** A single policy generates reasoning at critical decisions and carries task progress across context boundaries through memory summaries.
-- **Long-Horizon Reinforcement Learning.** Temporal-Aware GRPO (TA-GRPO) optimizes memory-linked trajectory segments using verifiable environment feedback and temporal credit assignment.
+- **Unified Visual Control.** Gamer observes screen images and acts through native keyboard and mouse inputs, using the same interface across games.
+- **Sparse Reasoning & Persistent Memory.** A single policy reasons at key decision points and uses memory summaries to retain task progress across context windows.
+- **Long-Horizon Reinforcement Learning.** Temporal-Aware GRPO (TA-GRPO) trains the policy on trajectory segments linked by memory summaries, using verifiable environment feedback and temporal credit assignment.
 - **Real-Time Streaming Inference.** Streaming-vLLM combines persistent context reuse, verified speculative decoding, and early action dispatch to support online rollouts, evaluation, and deployment.
 
 ## TODO List
@@ -79,27 +79,27 @@ We introduce Gamer, a generalist agent framework built for long-horizon tasks in
   </tr>
   <tr>
     <td align="center">Navigation, dialogue, and quest progression with persistent task memory.</td>
-    <td align="center">Rule interpretation, key decisions, and continuous keyboard-and-mouse control.</td>
+    <td align="center">Rule interpretation, key decisions, and continuous keyboard and mouse control.</td>
   </tr>
 </table>
 
 ## Method Overview
 
-Gamer combines three training stages through a shared screen-observation and keyboard-and-mouse interface.
+Gamer is trained in three stages: continued pre-training (CPT), supervised fine-tuning (SFT), and online reinforcement learning (RL). All three use the same interface for screen observations and keyboard and mouse actions.
 
 | Stage | Supervision | What the policy learns |
 |---|---|---|
-| **Continued Pre-Training** | Aligned screen observations and device-level actions from diverse games, mixed with general multimodal data | Transferable visual control through a unified action representation |
-| **Sparse-Reasoning SFT** | Instructions at operation, subgoal, and task levels, with reasoning and memory annotations | Task-conditioned actions, reasoning at critical decisions, and summaries that preserve progress across context boundaries |
-| **Temporal-Aware GRPO** | Online rollouts with environment-verifiable rewards | Improved long-horizon execution through memory-linked segments and temporal credit assignment |
+| **Continued Pre-Training** | Screen observations aligned with device-level actions from diverse games, combined with general multimodal data | Transferable visual control through a unified action representation |
+| **Sparse-Reasoning SFT** | Instructions at the operation, subgoal, and task levels, with reasoning and memory annotations | Task-conditioned actions, reasoning at key decision points, and memory summaries that preserve progress across context windows |
+| **Temporal-Aware GRPO** | Online rollouts with rewards based on verifiable environment outcomes | Improved long-horizon execution through memory-linked segments and temporal credit assignment |
 
-During interaction, the policy combines the game controls, task instruction, recent observations and actions, and persistent memory. It generates an action directly at routine steps, or produces reasoning or a memory update before acting. Summaries carry completed objectives, failed attempts, and remaining plans into later context windows.
+During interaction, the policy uses the game's control rules, the task instruction, recent observations and actions, and persistent memory to choose its next action. At routine steps, it acts directly; when needed, it first generates reasoning or updates memory. Memory summaries retain completed objectives, failed attempts, and remaining plans across context windows.
 
-Streaming-vLLM supplies the shared execution backend for online RL rollouts, evaluation, and deployment. The policy receives visual observations and task context; engine-side state is used separately by the environment backend for task initialization and reward verification. See Sections 2–5 of the paper for the full method.
+Streaming-vLLM provides a shared inference backend for online RL rollouts, evaluation, and deployment. The policy receives visual observations and task context. The environment backend separately uses engine-side state to initialize tasks and verify rewards. See Sections 2–5 of the paper for the full method.
 
 ## Main Results
 
-Gamer improves across CPT, SFT, and online RL on held-out tasks in **Honkai: Star Rail**. The evaluation includes two side quests with 30 and 55 milestones, respectively, and 40 minigame instances across seven game types. Side-quest scores report milestone execution success; the minigame score is the macro-average across the seven types.
+Gamer's performance improves from CPT to SFT and further with online RL on held-out tasks in **Honkai: Star Rail**. The evaluation covers two side quests with 30 and 55 milestones, respectively, plus 40 minigame instances across seven game types. Side-quest scores measure successful milestone execution. The minigame score is the macro-average across the seven types.
 
 | Evaluation | Gamer-CPT | Gamer-SFT | Gamer-RL |
 |---|---:|---:|---:|
@@ -107,7 +107,7 @@ Gamer improves across CPT, SFT, and online RL on held-out tasks in **Honkai: Sta
 | Bestial Ferocity | 47.9% | 69.1% | **83.6%** |
 | Minigame Benchmarks (macro-average) | 15.0% | 39.2% | **49.7%** |
 
-TA-GRPO improves the two side-quest scores by **7.8** and **14.5 percentage points** over SFT, and the minigame macro-average by **10.5 percentage points**.
+Compared with SFT, TA-GRPO increases the two side-quest scores by **7.8** and **14.5 percentage points**, respectively, and the minigame macro-average by **10.5 percentage points**.
 
 ## Streaming-vLLM
 
@@ -115,19 +115,19 @@ TA-GRPO improves the two side-quest scores by **7.8** and **14.5 percentage poin
 
 Streaming-vLLM is Gamer's serving engine for sustained, real-time interaction. It supports online rollout collection, evaluation, and deployment through the same observation–action protocol.
 
-- **Persistent context and KV-cache reuse.** Each environment keeps its own recent history, memory summaries, and cache state. Memory compaction retains useful task information while reusing cached context; incremental RoPE refresh adjusts retained keys after positions shift.
-- **Verified FSM speculative decoding.** A finite-state machine proposes predictable structural tokens in the output format, and the target model verifies them in BF16. Action values remain model-generated.
-- **Early action dispatch.** The server sends the first verified action block as soon as it is available, allowing execution to overlap with generation of the remaining blocks.
-- **Concurrent, architecture-aware serving.** Per-environment state and deadline-aware scheduling support parallel game clients. The serving interface covers Qwen3-VL and Qwen3.5 Dense and MoE backbones, with specialized execution paths for each architecture.
+- **Persistent context and KV-cache reuse.** For each environment, Streaming-vLLM retains recent history, memory summaries, and KV-cache state. Memory compaction preserves useful task information while reusing cached context. Incremental RoPE refresh adjusts the retained keys when their positions shift.
+- **Verified FSM speculative decoding.** A finite-state machine (FSM) proposes predictable structural tokens in the output format, which the target model verifies in BF16. The model generates the action values.
+- **Early action dispatch.** The server sends the first verified action block as soon as it is available. Execution can then begin while the remaining blocks are still being generated.
+- **Concurrent, architecture-aware serving.** Streaming-vLLM maintains separate state for each environment and schedules requests around action deadlines to serve multiple game clients concurrently. It supports Qwen3-VL and Qwen3.5 dense and MoE backbones, with execution paths tailored to each architecture.
 
 ### Inference Efficiency
 
-On the **NVIDIA H200 / Qwen3.5-35B-A3B MoE** workload, cumulative runtime optimizations reduce end-to-end request latency from **1306.00 ms to 65.12 ms**, a **20.1× speedup**.
+For the **NVIDIA H200 / Qwen3.5-35B-A3B MoE** configuration, cumulative runtime optimizations reduce end-to-end request latency from **1306.00 ms to 65.12 ms**, yielding a **20.1× speedup**.
 
 | Configuration | Tensor parallelism | Request latency ↓ |
 |---|---:|---:|
 | Baseline | TP1 | 1306.00 ms |
-| Full cumulative optimization (Ours) | TP4 | **65.12 ms** |
+| Full cumulative optimization (ours) | TP4 | **65.12 ms** |
 
 ## System Prompt
 
@@ -182,7 +182,7 @@ You are a gaming expert, and you are currently playing {GAME_NAME}. You are prof
 
 ## Action Format
 
-Each decision represents approximately **200 ms** of interaction: **six steps of approximately 33 ms**, together with mouse displacement and scrolling for the entire action chunk.
+Each decision covers approximately **200 ms** of interaction, divided into **six steps of approximately 33 ms** each. Mouse displacement and scrolling apply to the entire action chunk.
 
 ```text
 <|action_start|>X Y Z ; g1 ; g2 ; g3 ; g4 ; g5 ; g6<|action_end|>
@@ -232,11 +232,11 @@ The action vocabulary contains 74 case-sensitive tokens:
 When serving the model and parsing its outputs:
 
 - Set `skip_special_tokens: false` to retain the action delimiters.
-- Read the action after the final `</think>` tag so that format examples inside reasoning are not executed.
+- Parse the action after the final `</think>` tag to avoid executing format examples included in the reasoning.
 - Treat incomplete reasoning or an unparseable response as a no-op.
-- The action parser also accepts an action without its outer delimiters and drops unknown key tokens.
+- The action parser also accepts actions without outer delimiters and ignores unknown key tokens.
 
-For more usage details, please refer to our [GameScaling](https://github.com/THUSI-Lab/GameScaling).
+For more details on usage, see our [GameScaling](https://github.com/THUSI-Lab/GameScaling).
 
 ## License
 
@@ -252,7 +252,7 @@ If you find our work useful, please cite:
 
 ```bibtex
 @misc{gamer,
-  title = {Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent},
+  title = {Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon, Real-Time Game Agents},
   author = {Luo, Run and Zhang, Kuan and Deng, Qi and Chen, Yukun and Yang, Zhihao and Zhang, Yufei and Hu, Renrong and Zhang, Yi and Zheng, Yinhe and Xia, Xiaobo and Jiang, Dawei and Ren, Shaoqing},
   year = {2026}
 }
