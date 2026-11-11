@@ -85,7 +85,7 @@ We introduce Gamer, a generalist agent framework built for long-horizon tasks in
 
 ## Method Overview
 
-Gamer is trained in three stages: continued pre-training (CPT), supervised fine-tuning (SFT), and online reinforcement learning (RL). All three use the same interface for screen observations and keyboard and mouse actions.
+Gamer is trained in three stages: continued pre-training (CPT), supervised fine-tuning (SFT), and online reinforcement learning (RL). All stages use the same interface for screen observations and keyboard and mouse actions.
 
 | Stage | Supervision | What the policy learns |
 |---|---|---|
