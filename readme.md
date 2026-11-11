@@ -268,3 +268,7 @@ If you find our work useful, please cite:
   year = {2026}
 }
 ```
+
+## Star History
+
+<a href="https://www.star-history.com/?repos=RainBowLuoCS%2FGamerg&amp;type=date">
