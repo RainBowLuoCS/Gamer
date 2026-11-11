@@ -6,9 +6,9 @@
 
 <h2 align="center">Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agents</h2>
 
-<p>
+<!-- <p>
 Run&nbsp;Luo · Kuan&nbsp;Zhang · Qi&nbsp;Deng · Yukun&nbsp;Chen · Zhihao&nbsp;Yang · Yufei&nbsp;Zhang · Renrong&nbsp;Hu ·  Yi&nbsp;Zhang  <br> Yinhe&nbsp;Zheng · Xiaobo&nbsp;Xia · Dawei&nbsp;Jiang · Shaoqing&nbsp;Ren
-</p>
+</p> -->
 
 <p align="center">
   <img src="assets/logos/mihoyo.svg" alt="miHoYo" width="100" align="middle"> &nbsp; <b> Honkai AI R&amp;D Team</b>
