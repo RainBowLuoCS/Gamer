@@ -22,7 +22,7 @@ Run&nbsp;Luo · Kuan&nbsp;Zhang · Qi&nbsp;Deng · Yukun&nbsp;Chen · Zhihao&nbs
   <a href=""><img src="assets/badges/arxiv.svg" alt="arXiv"></a>
 </p>
 
-<p>
+<!-- <p>
 <a href="#abstract">Abstract</a> &nbsp;|&nbsp;
 <a href="#highlights">Highlights</a> &nbsp;|&nbsp;
 <a href="#todo-list">TODO List</a> &nbsp;|&nbsp;
@@ -34,7 +34,7 @@ Run&nbsp;Luo · Kuan&nbsp;Zhang · Qi&nbsp;Deng · Yukun&nbsp;Chen · Zhihao&nbs
 <a href="#action-format">Action Format</a> &nbsp;|&nbsp;
 <a href="#license">License</a> &nbsp;|&nbsp;
 <a href="#citation">Citation</a>
-</p>
+</p> -->
 
 </div>
 
