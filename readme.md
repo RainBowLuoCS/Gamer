@@ -4,7 +4,7 @@
   <img src="assets/logos/universities.svg" alt="National University of Singapore · Tsinghua University · University of Chinese Academy of Sciences · University of Science and Technology of China" width="100%">
 </p>
 
-<h2 align="center">Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agents</h2>
+<h2 align="center"><img src="assets/logos/gamer-icon.svg" alt="Gamer icon" height="32" align="top">&nbsp;Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agents</h2>
 
 <!-- <p>
 Run&nbsp;Luo · Kuan&nbsp;Zhang · Qi&nbsp;Deng · Yukun&nbsp;Chen · Zhihao&nbsp;Yang · Yufei&nbsp;Zhang · Renrong&nbsp;Hu ·  Yi&nbsp;Zhang  <br> Yinhe&nbsp;Zheng · Xiaobo&nbsp;Xia · Dawei&nbsp;Jiang · Shaoqing&nbsp;Ren
@@ -67,15 +67,14 @@ We introduce Gamer, a generalist agent framework built for long-horizon tasks in
 
 ## Video Demos
 
-<!-- Replace each empty href with its video URL and update the preview image when ready. -->
 <table>
   <tr>
     <th align="center" width="50%">Long-Horizon Quest Execution</th>
     <th align="center" width="50%">Puzzle Solving &amp; Real-Time Interaction</th>
   </tr>
   <tr>
-    <td align="center"><a href=""><img src="assets/video-demo-placeholder.svg" alt="Long-Horizon Quest Execution — video link to be added" width="100%"></a></td>
-    <td align="center"><a href=""><img src="assets/video-demo-placeholder.svg" alt="Puzzle Solving and Real-Time Interaction — video link to be added" width="100%"></a></td>
+    <td align="center"><a href="assets/videos/demo.mp4"><img src="assets/video-demo-placeholder.svg" alt="Click to watch the video" width="100%"></a></td>
+    <td align="center"><a href="assets/videos/Puzzle.mp4"><img src="assets/video-demo-placeholder.svg" alt="Click to watch the video" width="100%"></a></td>
   </tr>
   <tr>
     <td align="center">Navigation, dialogue, and quest progression with persistent task memory.</td>
