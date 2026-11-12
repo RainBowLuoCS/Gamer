@@ -73,8 +73,8 @@ We introduce Gamer, a generalist agent framework built for long-horizon tasks in
     <th align="center" width="50%">Puzzle Solving &amp; Real-Time Interaction</th>
   </tr>
   <tr>
-    <td align="center"><a href="assets/videos/demo.mp4"><img src="assets/video-demo-placeholder.svg" alt="Click to watch the video" width="100%"></a></td>
-    <td align="center"><a href="assets/videos/Puzzle.mp4"><img src="assets/video-demo-placeholder.svg" alt="Click to watch the video" width="100%"></a></td>
+    <td align="center"><video src="https://github.com/user-attachments/assets/f3e9604f-8582-44c6-9c3b-61ae0431d4f9" controls muted width="100%"></video></td>
+    <td align="center"><video src="https://github.com/user-attachments/assets/9158fd79-031b-41ab-8049-11a5a4ed82e3" controls muted width="100%"></video></td>
   </tr>
   <tr>
     <td align="center">Navigation, dialogue, and quest progression with persistent task memory.</td>
