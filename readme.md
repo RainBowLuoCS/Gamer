@@ -270,4 +270,5 @@ If you find our work useful, please cite:
 
 ## Star History
 
-<a href="https://www.star-history.com/?repos=RainBowLuoCS%2FGamerg&amp;type=date">
+[![Star History Chart](https://api.star-history.com/svg?repos=RainBowLuoCS/Gamer&type=Date)](https://www.star-history.com/#RainBowLuoCS/Gamer&Date)
+
