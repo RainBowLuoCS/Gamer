@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="930" height="930" viewBox="157 217 930 930" role="img" aria-labelledby="gamer-title">
+  <title id="gamer-title">Gamer mascot</title>
+  <defs>
+    <linearGradient id="cap-blue" gradientUnits="userSpaceOnUse" x1="341" y1="454" x2="571" y2="212">
+      <stop stop-color="#3457d6"/>
+      <stop offset=".53" stop-color="#5074ef"/>
+      <stop offset="1" stop-color="#8580ef"/>
+    </linearGradient>
+    <linearGradient id="helmet-blue" gradientUnits="userSpaceOnUse" x1="382" y1="805" x2="836" y2="434">
+      <stop stop-color="#304fce"/>
+      <stop offset=".58" stop-color="#3d60df"/>
+      <stop offset="1" stop-color="#6d74ea"/>
+    </linearGradient>
+    <linearGradient id="porcelain" x1="0" y1="1" x2=".72" y2="0">
+      <stop stop-color="#e8ecfa"/>
+      <stop offset=".72" stop-color="#eff1fc"/>
+      <stop offset="1" stop-color="#f1f2fd"/>
+    </linearGradient>
+    <linearGradient id="visor-blue" gradientUnits="userSpaceOnUse" x1="551" y1="750" x2="863" y2="430">
+      <stop stop-color="#3456d8"/>
+      <stop offset=".52" stop-color="#4b66e7"/>
+      <stop offset="1" stop-color="#807cf2"/>
+    </linearGradient>
+    <radialGradient id="ear-blue" cx=".63" cy=".21" r=".85">
+      <stop stop-color="#647af2"/>
+      <stop offset=".62" stop-color="#4466e7"/>
+      <stop offset="1" stop-color="#3154d3"/>
+    </radialGradient>
+    <linearGradient id="scarf-violet" gradientUnits="userSpaceOnUse" x1="284" y1="923" x2="1000" y2="722">
+      <stop stop-color="#8088f7"/>
+      <stop offset=".47" stop-color="#9983f7"/>
+      <stop offset="1" stop-color="#a97cf2"/>
+    </linearGradient>
+    <linearGradient id="controller-blue" gradientUnits="userSpaceOnUse" x1="377" y1="1102" x2="851" y2="862">
+      <stop stop-color="#3659dc"/>
+      <stop offset=".49" stop-color="#4b6bec"/>
+      <stop offset="1" stop-color="#7678f0"/>
+    </linearGradient>
+  </defs>
+
+  <g id="helmet">
+    <path id="cap" fill="url(#cap-blue)" d="M214 385 C196 371 218 348 249 328 C326 278 421 250 497 252 C588 251 679 278 737 328 C618 316 450 385 321 460 C292 431 243 404 214 385Z"/>
+    <path id="helmet-rim" fill="url(#helmet-blue)" d="M281 550 C305 473 359 410 423 371 C496 327 542 321 593 325 C618 322 646 320 676 324 C777 319 855 369 899 459 C929 518 945 584 937 645 C930 701 898 740 856 769 C795 823 706 835 627 834 C541 834 452 825 389 816 C342 802 304 776 279 744 C249 704 240 662 248 619 C254 589 264 566 281 550Z"/>
+    <path id="helmet-stripe" fill="url(#porcelain)" d="M280 550 C296 477 360 410 425 371 C479 339 542 323 594 325 C491 358 407 413 356 498 C325 502 296 521 280 550Z"/>
+    <path id="helmet-shell" fill="url(#porcelain)" d="M396 502 C446 406 571 330 677 324 C776 318 857 370 899 459 C927 515 945 582 936 642 C928 707 888 752 818 780 C717 822 533 831 427 782 C453 762 477 729 487 691 C506 616 456 521 396 502Z"/>
+    <path id="visor" fill="url(#visor-blue)" d="M477 571 C520 493 621 463 707 467 C755 468 803 476 809 415 C863 433 912 481 928 544 C948 622 924 672 868 695 C808 721 698 743 620 745 C563 748 520 731 487 691 C469 670 454 645 452 615 C450 598 462 578 477 571Z"/>
+    <g id="eyes" fill="url(#porcelain)">
+      <path d="M548 631 C555 603 581 575 609 567 C641 557 676 570 697 596 C711 613 706 627 695 630 C687 634 679 628 671 622 C638 597 604 611 578 647 C572 655 565 659 557 656 C547 653 544 644 548 631Z"/>
+      <path d="M775 584 C784 552 812 528 837 526 C865 523 889 542 898 566 C905 583 897 592 886 586 C881 584 878 580 872 576 C847 555 819 568 803 598 C798 609 792 614 785 613 C774 611 771 599 775 584Z"/>
+    </g>
+    <g id="headphone">
+      <path fill="url(#porcelain)" d="M355 513 C416 510 470 568 478 636 C489 713 434 782 370 788 C301 794 241 731 242 654 C242 576 294 516 355 513Z"/>
+      <path fill="url(#ear-blue)" d="M340 562 C383 561 417 600 420 651 C423 702 389 747 343 748 C297 748 258 707 258 658 C258 607 293 562 340 562Z"/>
+    </g>
+  </g>
+
+  <path id="scarf" fill="url(#scarf-violet)" d="M279 942 C273 946 274 938 278 923 C292 877 325 838 373 822 C431 799 485 816 558 826 C675 843 780 829 856 766 C931 743 989 696 1024 664 C1030 658 1035 661 1032 674 C1009 770 969 824 895 842 C825 860 765 880 707 889 C618 902 555 879 481 886 C401 895 333 912 279 942Z"/>
+
+  <g id="controller">
+    <path id="controller-body" fill="url(#controller-blue)" d="M357 980 C359 928 400 882 453 858 C505 835 547 840 587 861 C603 870 617 875 640 875 L701 875 C722 875 735 859 757 848 C800 827 852 848 886 882 C914 911 927 949 923 988 C921 1021 902 1048 873 1054 C859 1088 832 1110 798 1112 C768 1114 745 1096 719 1070 C704 1055 689 1056 652 1055 C610 1054 581 1053 563 1065 C534 1085 516 1111 480 1113 C446 1115 423 1092 407 1060 C374 1050 352 1023 357 980Z"/>
+    <g id="controller-details" fill="url(#porcelain)">
+      <path id="controller-grips" d="M436 914 C478 870 532 849 575 862 C596 868 606 871 622 871 H704 C725 871 741 859 768 859 C808 857 845 875 871 916 C900 926 920 952 920 982 C922 1021 900 1054 866 1054 C831 1054 804 1027 805 993 C806 963 830 941 861 929 C835 899 804 880 770 880 C744 880 727 895 706 895 H620 C593 895 581 883 562 880 C517 875 483 896 443 932 C473 937 494 961 494 989 C493 1027 455 1061 417 1060 C386 1059 367 1034 367 1000 C367 961 391 922 436 914Z"/>
+      <path id="direction-pad" d="M562 918 H573 Q589 918 589 933 V953 H610 Q625 953 625 968 V981 Q625 996 610 996 H589 V1017 Q589 1032 573 1032 H562 Q546 1032 546 1017 V996 H525 Q510 996 510 981 V968 Q510 953 525 953 H546 V933 Q546 918 562 918Z"/>
+      <circle cx="773.5" cy="943.5" r="23.3"/>
+      <circle cx="726.4" cy="987.3" r="25.2"/>
+    </g>
+  </g>
+</svg>
