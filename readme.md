@@ -43,7 +43,7 @@ Run&nbsp;Luo · Kuan&nbsp;Zhang · Qi&nbsp;Deng · Yukun&nbsp;Chen · Zhihao&nbs
 </p>
 
 <h3 align="center">
-If you find Gamer useful, please upvote our <a href="">Daily Paper</a> on Hugging Face.<br>
+If you find Gamer useful, please upvote our <a href="https://huggingface.co/papers/2611.18397">Daily Paper</a> on Hugging Face.<br>
 Thank you for your support!
 </h3>
 
