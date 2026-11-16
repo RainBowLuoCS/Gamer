@@ -16,10 +16,10 @@ Run&nbsp;Luo · Kuan&nbsp;Zhang · Qi&nbsp;Deng · Yukun&nbsp;Chen · Zhihao&nbs
 
 <!-- Fill in the empty href values with the corresponding release URLs. -->
 <p align="center">
-  <a href=""><img src="assets/badges/models.svg" alt="Models"></a>
+  <a href="https://huggingface.co/collections/THUSI-Lab/gamescaling-model"><img src="assets/badges/models.svg" alt="Models"></a>
   <a href=""><img src="assets/badges/daily-paper.svg" alt="Daily Paper"></a>
   <a href="https://mihoyo-gamer.github.io/"><img src="assets/badges/project-page.svg" alt="Project Page"></a>
-  <a href=""><img src="assets/badges/arxiv.svg" alt="arXiv"></a>
+  <a href="https://arxiv.org/abs/2611.18397"><img src="assets/badges/arxiv.svg" alt="arXiv"></a>
 </p>
 
 <!-- <p>
@@ -250,11 +250,13 @@ If you find our work useful, please cite:
 **Gamer**
 
 ```bibtex
-@misc{gamer,
-  title = {Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon, Real-Time Game Agents},
-  author = {Luo, Run and Zhang, Kuan and Deng, Qi and Chen, Yukun and Yang, Zhihao and Zhang, Yufei and Hu, Renrong and Zhang, Yi and Zheng, Yinhe and Xia, Xiaobo and Jiang, Dawei and Ren, Shaoqing},
+@article{luo-gamer,
+  title = {Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent},
+  author = {Luo, Run and Zhang, Kuan and Deng, Qi and Chen, Yukun and Yang, Zhihao and Zhang, Yufei and Hu, Renrong and Zhang, Yi and Ma, Guiyu and Fan, Tianyu and Chen, Longze and Sun, Hao and Li, Jiaming and Yang, Jiaming and Liu, Xiaohao and Tan, Tao and Wang, Minzheng and Jia, Hangtian and Yuan, Shuai and Wang, Lvdi and Liu, Xiao and Ma, Chao and Zou, Yuting and Zheng, Yinhe and Xia, Xiaobo and Jiang, Dawei and Ren, Shaoqing},
+  journal = {arXiv preprint arXiv:2611.18397},
   year = {2026}
 }
+
 ```
 
 **GameScaling**
